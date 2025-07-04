@@ -1,0 +1,37 @@
+networks:
+  zeus-network:
+    driver: bridge
+
+services:
+  zeus-mysql:
+    image: ${IMAGE_PREFIX}mysql:5.7.37
+    restart: always
+    ports:
+      - "3306:3306"
+    volumes:
+      - ${SERVER_INSTALL_PATH}/zeus-mysql/data:/var/lib/mysql
+      - ${SERVER_INSTALL_PATH}/zeus-mysql/config:/etc/mysql/
+      - ${SERVER_INSTALL_PATH}/zeus-mysql/logs:/logs
+    environment:
+      MYSQL_ROOT_HOST: '%'
+      MYSQL_ROOT_PASSWORD: "root@ROOT"
+      MYSQL_USER: "zeus"
+      MYSQL_PASSWORD: "zeus"
+      MYSQL_DATABASE: "zeus"
+      TZ: Asia/Shanghai
+    container_name: zeus-mysql
+
+  zeus-server:
+    image: ${IMAGE_PREFIX}zeus-server:latest
+    restart: always
+    ports:
+      - "21101:21101"
+      - "21102:21102"
+      - "21103:21103"
+    networks:
+      - zeus-network
+    volumes:
+      - ${SERVER_INSTALL_PATH}/zeus/zeus-server:/logs
+      - ${SERVER_INSTALL_PATH}/zeus/configs:/configs
+      - /var/run/docker.sock:/var/run/docker.sock
+    container_name: zeus-server

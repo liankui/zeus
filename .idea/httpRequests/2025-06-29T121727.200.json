@@ -1,0 +1,3 @@
+{
+  "data": "# Query: F11FCE9009CF23EA\n\n★ ★ ★ ☆ ☆ 75分\n\n```sql\n\nSELECT  \n  * \nFROM  \n  example\n```\n\n## 最外层 SELECT 未指定 WHERE 条件\n\n* **Item:**  CLA.001\n\n* **Severity:**  L4\n\n* **Content:**  SELECT 语句没有 WHERE 子句，可能检查比预期更多的行(全表扫描)。对于 SELECT COUNT(\\*) 类型的请求如果不要求精度，建议使用 SHOW TABLE STATUS 或 EXPLAIN 替代。\n\n## 不建议使用 SELECT * 类型查询\n\n* **Item:**  COL.001\n\n* **Severity:**  L1\n\n* **Content:**  当表结构变更时，使用 \\* 通配符选择所有列将导致查询的含义和行为会发生更改，可能导致查询返回更多的数据。\n\n"
+}

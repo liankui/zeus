@@ -1,0 +1,77 @@
+POST http://127.0.0.1:21101/zeus/v1/soar
+Content-Type: application/json
+Content-Length: 68
+User-Agent: IntelliJ HTTP Client/GoLand 2025.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "soar" : {
+        "query": "select * from example;"
+    }
+}
+
+<> 2025-06-29T121727.200.json
+
+###
+
+POST http://127.0.0.1:21101/zeus/v1/soar
+Content-Type: application/json
+Content-Length: 41
+User-Agent: IntelliJ HTTP Client/GoLand 2025.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "query": "select * from example;"
+}
+
+<> 2025-06-29T121658.500.json
+
+###
+
+POST http://127.0.0.1:21101/zeus/v1/soar
+Content-Type: application/json
+Content-Length: 41
+User-Agent: IntelliJ HTTP Client/GoLand 2025.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "query": "select * from example;"
+}
+
+<> 2025-06-29T115602.200.json
+
+###
+
+POST http://127.0.0.1:21101/zeus/v1/soar
+Content-Type: application/json
+Content-Length: 41
+User-Agent: IntelliJ HTTP Client/GoLand 2025.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "query": "select * from example;"
+}
+
+<> 2025-06-29T115256.200.json
+
+###
+
+POST http://127.0.0.1:21101/zeus/v1/soar
+Content-Type: application/json
+Content-Length: 40
+User-Agent: IntelliJ HTTP Client/GoLand 2025.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "query": "select * from example"
+}
+
+<> 2025-06-29T115236.200.json
+
+###
+
