@@ -1,0 +1,75 @@
+syntax = "proto3";
+
+package zeus.v1;
+
+import "google/api/annotations.proto";
+
+option go_package = "github.com/chaos-io/zeus/api/v1;zeus";
+
+service Zeus {
+  rpc CreateResource(CreateResourceRequest) returns (Resource){
+    option (google.api.http) = {
+      post: "/zeus/v1/resources"
+      body: "resource"
+    };
+  };
+
+  rpc GetResource(GetResourceRequest) returns (Resource){
+    option (google.api.http) = {
+      get: "/zeus/v1/resources/{id}"
+    };
+  };
+
+  rpc ListResources(ListResourcesRequest) returns (ListResourcesResponse) {
+    option (google.api.http) = {
+      get: "/zeus/v1/resources"
+    };
+  };
+
+  rpc UpdateResource(UpdateResourceRequest) returns (Resource) {
+    option (google.api.http) = {
+      put: "/zeus/v1/resources"
+      body: "resource"
+    };
+  };
+
+  rpc DeleteResource(DeleteResourceRequest) returns (DeleteResourceResponse){
+    option (google.api.http) = {
+      delete: "/zeus/v1/resources/{id}"
+    };
+  };
+}
+
+message Resource {
+  string id = 1;
+  string name = 2;
+}
+
+message CreateResourceRequest {
+  Resource resource = 1;
+  string locale = 10;
+}
+
+message GetResourceRequest {
+  string id = 1;
+}
+
+message ListResourcesRequest {}
+
+message ListResourcesResponse {
+  repeated Resource resources = 1;
+}
+
+message UpdateResourceRequest {
+  Resource resource = 1;
+  string locale = 10;
+}
+
+message DeleteResourceRequest {
+  string id = 1;
+  string locale = 10;
+}
+
+message DeleteResourceResponse {
+  string id = 1;
+}
