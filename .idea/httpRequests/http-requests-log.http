@@ -1,5 +1,22 @@
 POST http://127.0.0.1:21101/zeus/v1/soar
 Content-Type: application/json
+Content-Length: 66
+User-Agent: IntelliJ HTTP Client/GoLand 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "soar" : {
+        "query": "select * from example;"
+    }
+}
+
+<> 2025-07-04T173951.200.json
+
+###
+
+POST http://127.0.0.1:21101/zeus/v1/soar
+Content-Type: application/json
 Content-Length: 68
 User-Agent: IntelliJ HTTP Client/GoLand 2025.1.2
 Accept-Encoding: br, deflate, gzip, x-gzip
