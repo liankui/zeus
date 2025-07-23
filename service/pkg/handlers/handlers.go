@@ -7,7 +7,7 @@ import (
 	"github.com/chaos-io/chaos/logs"
 
 	// this service api
-	pb "github.com/chaos-io/zeus/api/v1"
+	pb "github.com/chaos-io/zeus/go/zeus/v1"
 )
 
 type zeusServer struct {

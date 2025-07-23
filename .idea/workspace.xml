@@ -4,11 +4,25 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90f2de4d-e207-4eee-8804-1561eb52bb07" name="更改" comment="" />
+    <list default="true" id="90f2de4d-e207-4eee-8804-1561eb52bb07" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/service/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/service/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/internal/run.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/internal/run.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/pkg/svc/transport_http.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/pkg/svc/transport_http.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
   </component>
   <component name="GOROOT" url="file://$PROJECT_DIR$/../../../pkg/mod/golang.org/toolchain@v0.0.1-go1.24.3.darwin-arm64" />
   <component name="Git.Settings">
@@ -35,6 +49,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultGoTemplateProperty": "Go File",
+    "Go 构建.go build github.com/chaos-io/zeus/fasthttp.executor": "Run",
+    "HTTP 请求.scratch | #10.executor": "Run",
     "HTTP 请求.scratch | #5.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.GoLinterPluginOnboarding": "true",
@@ -57,6 +74,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/service" />
+      <recent name="$PROJECT_DIR$/web" />
       <recent name="$PROJECT_DIR$/api/v1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -65,12 +84,26 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="HTTP 请求.scratch | #10">
+    <configuration name="go build github.com/chaos-io/zeus/fasthttp" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="zeus" />
+      <working_directory value="$PROJECT_DIR$/fasthttp" />
+      <kind value="PACKAGE" />
+      <package value="github.com/chaos-io/zeus/fasthttp" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/fasthttp/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch | #10" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/scratch.http" executionIdentifier="#10" index="10" runType="运行单个请求">
+      <method v="2" />
+    </configuration>
     <configuration name="scratch | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/scratch.http" executionIdentifier="#5" index="5" runType="运行单个请求">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP 请求.scratch | #10" />
+        <item itemvalue="Go 构建.go build github.com/chaos-io/zeus/fasthttp" />
         <item itemvalue="HTTP 请求.scratch | #5" />
       </list>
     </recent_temporary>

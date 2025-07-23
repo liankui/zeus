@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package zeus.v1;
+
+import "google/api/annotations.proto";
+import "zeus/soar.proto";
+
+option go_package = "github.com/chaos-io/zeus/go/zeus/v1;zeus";
+
+service Zeus {
+  rpc ExecSoar(ExecSoarRequest) returns (ExecSoarResponse) {
+    option (google.api.http) = {post: "/zeus/v1/soar"};
+  }
+}
+
+message ExecSoarRequest {
+  Soar soar = 1;
+}
+
+message ExecSoarResponse {
+  string level = 10;
+  string data = 20;
+}

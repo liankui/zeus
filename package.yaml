@@ -1,12 +1,12 @@
 package:
   name: zeus
-  version: v0.1.0
-  authors:
-    - author: Eric Yue
-      email: yuekewin@gmail.com
-      organization: chaos-io
-  license: GNU
-  dependencies:
-    - repository: github.com/chaos-io/gokit
-      version: latest
+  version: v0.1.1
+  authors: 
+    - author: 
+      email: 
+      organization: 
+  dependencies: 
+    chaos.core:
+      repository: github.com/chaos-io/core/go
+      version: v0.0.0-20250722061710-7d3320bb64e1
   repository: github.com/chaos-io/zeus

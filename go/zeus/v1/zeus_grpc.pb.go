@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.3.0
 // - protoc             (unknown)
-// source: api/v1/zeus.proto
+// source: zeus/v1/zeus.proto
 
 package zeus
 
@@ -105,5 +105,5 @@ var Zeus_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "api/v1/zeus.proto",
+	Metadata: "zeus/v1/zeus.proto",
 }

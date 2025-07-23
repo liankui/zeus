@@ -9,7 +9,7 @@ import (
 	"github.com/chaos-io/zeus/service/pkg/svc"
 
 	// this service api
-	pb "github.com/chaos-io/zeus/api/v1"
+	pb "github.com/chaos-io/zeus/go/zeus/v1"
 )
 
 // WrapEndpoints accepts the service's entire collection of endpoints, so that a

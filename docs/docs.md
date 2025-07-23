@@ -3,56 +3,21 @@
 
 ## Table of Contents
 
-- [api/v1/zeus.proto](#api_v1_zeus-proto)
-    - [ExecSoarRequest](#zeus-v1-ExecSoarRequest)
-    - [ExecSoarResponse](#zeus-v1-ExecSoarResponse)
-    - [Soar](#zeus-v1-Soar)
-  
-    - [Zeus](#zeus-v1-Zeus)
+- [zeus/soar.proto](#zeus_soar-proto)
+    - [Soar](#zeus-Soar)
   
 - [Scalar Value Types](#scalar-value-types)
 
 
 
-<a name="api_v1_zeus-proto"></a>
+<a name="zeus_soar-proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## api/v1/zeus.proto
+## zeus/soar.proto
 
 
 
-<a name="zeus-v1-ExecSoarRequest"></a>
-
-### ExecSoarRequest
-
-
-
-| Field | Type | Label | Description |
-| ----- | ---- | ----- | ----------- |
-| soar | [Soar](#zeus-v1-Soar) |  |  |
-
-
-
-
-
-
-<a name="zeus-v1-ExecSoarResponse"></a>
-
-### ExecSoarResponse
-
-
-
-| Field | Type | Label | Description |
-| ----- | ---- | ----- | ----------- |
-| level | [string](#string) |  |  |
-| data | [string](#string) |  |  |
-
-
-
-
-
-
-<a name="zeus-v1-Soar"></a>
+<a name="zeus-Soar"></a>
 
 ### Soar
 
@@ -72,16 +37,6 @@
  
 
  
-
-
-<a name="zeus-v1-Zeus"></a>
-
-### Zeus
-
-
-| Method Name | Request Type | Response Type | Description |
-| ----------- | ------------ | ------------- | ------------|
-| ExecSoar | [ExecSoarRequest](#zeus-v1-ExecSoarRequest) | [ExecSoarResponse](#zeus-v1-ExecSoarResponse) |  |
 
  
 

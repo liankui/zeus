@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zeus;
+
+option go_package = "github.com/chaos-io/zeus/go/zeus;zeus";
+
+message Soar {
+  string query = 10;
+  string report_type = 20;
+}

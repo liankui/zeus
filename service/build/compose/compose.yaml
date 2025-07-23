@@ -21,6 +21,19 @@ services:
       TZ: Asia/Shanghai
     container_name: zeus-mysql
 
+  zeus-redis:
+    image: ${IMAGE_PREFIX}redis:7.4.2
+    restart: always
+    networks:
+      - zeus-network
+    ports:
+      - "6379:6379"
+    volumes:
+      - ${SERVER_INSTALL_PATH}/zeus-redis/data:/data
+      - ${SERVER_INSTALL_PATH}/zeus-redis/config/redis.conf:/etc/redis/redis.conf
+    container_name: zeus-redis
+    command: [ "redis-server", "/etc/redis/redis.conf", "--requirepass", "zeus" ]
+
   zeus-server:
     image: ${IMAGE_PREFIX}zeus-server:latest
     restart: always
